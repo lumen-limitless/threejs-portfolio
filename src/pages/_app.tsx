@@ -4,6 +4,7 @@ import Head from 'next/head'
 import { APP_DESCRIPTION, APP_NAME } from '../constants'
 import Layout from '../layouts'
 import { DefaultSeo } from 'next-seo'
+
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
@@ -18,7 +19,6 @@ function MyApp({ Component, pageProps }: AppProps) {
           content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover"
         />
       </Head>
-
       <Layout>
         <Component {...pageProps} />
       </Layout>
